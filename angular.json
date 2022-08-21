@@ -82,7 +82,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -216,7 +215,7 @@
       "prefix": "sales",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/sales/tsconfig.lib.json",
             "project": "projects/sales/ng-package.json"
@@ -256,7 +255,7 @@
       "prefix": "dynamic-forms",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/dynamic-forms/tsconfig.lib.json",
             "project": "projects/dynamic-forms/ng-package.json"
@@ -296,7 +295,7 @@
       "prefix": "utils",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/utils/tsconfig.lib.json",
             "project": "projects/utils/ng-package.json"
@@ -336,7 +335,7 @@
       "prefix": "serendipity-component",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/serendipity-components/tsconfig.lib.json",
             "project": "projects/serendipity-components/ng-package.json"
@@ -376,7 +375,7 @@
       "prefix": "flowable",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/flowable/tsconfig.lib.json",
             "project": "projects/flowable/ng-package.json"
@@ -416,7 +415,7 @@
       "prefix": "dashboard",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/dashboard/tsconfig.lib.json",
             "project": "projects/dashboard/ng-package.json"
@@ -456,7 +455,7 @@
       "prefix": "widget",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/dashboard-widgets/tsconfig.lib.json",
             "project": "projects/dashboard-widgets/ng-package.json"
@@ -496,7 +495,7 @@
       "prefix": "auth",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/auth/tsconfig.lib.json",
             "project": "projects/auth/ng-package.json"
@@ -536,7 +535,7 @@
       "prefix": "auth-local",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/auth-local/tsconfig.lib.json",
             "project": "projects/auth-local/ng-package.json"
@@ -576,7 +575,7 @@
       "prefix": "auth-auth0",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/auth-auth0/tsconfig.lib.json",
             "project": "projects/auth-auth0/ng-package.json"
@@ -616,7 +615,7 @@
       "prefix": "auth-okta",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/auth-okta/tsconfig.lib.json",
             "project": "projects/auth-okta/ng-package.json"
@@ -656,7 +655,7 @@
       "prefix": "auth-oidc",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/auth-oidc/tsconfig.lib.json",
             "project": "projects/auth-oidc/ng-package.json"
@@ -696,7 +695,7 @@
       "prefix": "work",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/work/tsconfig.lib.json",
             "project": "projects/work/ng-package.json"
@@ -736,7 +735,7 @@
       "prefix": "party",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/party/tsconfig.lib.json",
             "project": "projects/party/ng-package.json"
