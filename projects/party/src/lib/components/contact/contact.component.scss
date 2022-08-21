@@ -38,7 +38,7 @@
   height: calc(100vh - 328px);  // 340
   // width: 100%;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     // $mat-toolbar-height-mobile + $crm-command-bar-height-mobile + $crm-view-bar-height-mobile
     // 56 + 0 + 84 + 0 + 56
     // height: calc(100vh - 140px);

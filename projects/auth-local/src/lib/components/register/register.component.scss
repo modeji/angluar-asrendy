@@ -5,7 +5,7 @@
   height: 100vh;
   display: grid;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     color: white;
   }
 
@@ -18,7 +18,7 @@
   height: 464px;
   padding: 32px;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     // width - (padding * 2)
     width: calc(100% - 64px);
     transition: none !important;

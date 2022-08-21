@@ -18,7 +18,7 @@ $crm-dashboard-widget-toolbar-height-mobile: 40px !default;
   min-height: $crm-dashboard-widget-toolbar-height-desktop;
   border-bottom: 1px solid slategray;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     height: $crm-dashboard-widget-toolbar-height-mobile;
     min-height: $crm-dashboard-widget-toolbar-height-mobile
   }
@@ -28,7 +28,7 @@ $crm-dashboard-widget-toolbar-height-mobile: 40px !default;
   height: $crm-dashboard-widget-toolbar-height-desktop;
   min-height: $crm-dashboard-widget-toolbar-height-desktop;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     height: $crm-dashboard-widget-toolbar-height-mobile;
     min-height: $crm-dashboard-widget-toolbar-height-mobile
   }

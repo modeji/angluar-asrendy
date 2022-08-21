@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @import '~@angular/material/theming';
 
 @import "../fonts";
@@ -10,15 +11,15 @@
 
 // Generate Material’s core styles
 
-@include mat-core($custom-typography);
+@include mat.core($custom-typography);
 // @include mat-toolbar-typography($custom-toolbar-typography);
 
 // Generate a Custom Theme
 
-$light-theme: mat-light-theme($light-theme-primary, $light-theme-accent, $light-theme-warn);
+$light-theme: mat.define-light-theme($light-theme-primary, $light-theme-accent, $light-theme-warn);
 // $dark-theme: mat-dark-theme($dark-theme-primary, $dark-theme-accent, $dark-theme-warn);
 
-@include angular-material-theme($light-theme);
+@include mat.all-component-themes($light-theme);
 
 // Theme Custom components
 
@@ -58,7 +59,7 @@ $sidenav-width: 320px; // 240px;
 
 .mat-drawer-container {
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     background-color: white;
   }
 

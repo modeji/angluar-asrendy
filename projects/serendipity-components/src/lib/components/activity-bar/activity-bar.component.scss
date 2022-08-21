@@ -11,7 +11,7 @@
   padding-right: 32px;
   justify-content: center;
 
-  @media ($mat-xsmall) {
+  @media (max-width: 599px) {
     height: $crm-activity-bar-height-mobile !important;
     min-height: $crm-activity-bar-height-mobile !important;
   }
