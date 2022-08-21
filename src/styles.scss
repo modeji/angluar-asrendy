@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 // If you are using the Angular CLI, support for compiling Sass to css is built-in; you only have to add a new entry to
 // the "styles" list in angular.json pointing to the theme file, for example:
@@ -15,7 +15,7 @@
 // the theme object should be broken into its own file, separate from the inclusion of the mat-core and
 // angular-material-theme mixins. See: https://material.angular.io/guide/theming
 
-@import '~@angular/material/theming';
+@import '@angular/material/theming';
 
 @import "../projects/utils/src/lib/angular-material/mat-variables";
 @import "../projects/utils/src/lib/angular-material/variables";

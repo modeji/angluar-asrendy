@@ -23,21 +23,20 @@ const components: any[] = [
 ];
 
 @NgModule({
-  imports: [
-    AngularMaterialModule,
-    CommonModule,
-    ReactiveFormsModule,
-    UtilsModule
-  ],
-  declarations: [
-    DynamicControlDirective,
-    DynamicFormComponent,
-    ...components
-  ],
-  exports: [
-    DynamicFormComponent
-  ],
-  entryComponents: [ ...components ]
+    imports: [
+        AngularMaterialModule,
+        CommonModule,
+        ReactiveFormsModule,
+        UtilsModule
+    ],
+    declarations: [
+        DynamicControlDirective,
+        DynamicFormComponent,
+        ...components
+    ],
+    exports: [
+        DynamicFormComponent
+    ]
 })
 export class DynamicFormsModule {
 

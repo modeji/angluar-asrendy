@@ -22,25 +22,22 @@ const dashboardWidgets = [
 ];
 
 @NgModule({
-  imports: [
-    AngularMaterialModule,
-    CommonModule,
-    DashboardWidgetsModule,
-    DynamicModule,
-    FlexLayoutModule,
-    GridsterModule,
-    SerendipityComponentsModule,
-    UtilsModule
-  ],
-  declarations: [
-    DashboardComponent
-  ],
-  exports: [
-    DashboardComponent
-  ],
-  entryComponents: [
-    ...dashboardWidgets
-  ]
+    imports: [
+        AngularMaterialModule,
+        CommonModule,
+        DashboardWidgetsModule,
+        DynamicModule,
+        FlexLayoutModule,
+        GridsterModule,
+        SerendipityComponentsModule,
+        UtilsModule
+    ],
+    declarations: [
+        DashboardComponent
+    ],
+    exports: [
+        DashboardComponent
+    ]
 })
 export class DashboardModule {
 

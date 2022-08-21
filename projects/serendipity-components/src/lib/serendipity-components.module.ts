@@ -40,21 +40,18 @@ const serendipityComponents = [
 ] ;
 
 @NgModule({
-  imports: [
-    AngularMaterialModule,
-    CommonModule,
-    FlexLayoutModule,
-    UtilsModule
-  ],
-  declarations: [
-    ...serendipityComponents
+    imports: [
+        AngularMaterialModule,
+        CommonModule,
+        FlexLayoutModule,
+        UtilsModule
     ],
-  exports: [
-    ...serendipityComponents
+    declarations: [
+        ...serendipityComponents
     ],
-  entryComponents: [
-    ...serendipityComponents
-  ]
+    exports: [
+        ...serendipityComponents
+    ]
 })
 export class SerendipityComponentsModule {
 

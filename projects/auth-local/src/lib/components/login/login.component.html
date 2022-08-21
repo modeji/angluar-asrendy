@@ -36,7 +36,7 @@
 
     <mat-card-footer class="sign-in-card-footer" fxLayoutAlign="center center">
       {{ 'DONT_HAVE_AN_ACCOUNT_LABEL' | translate }}&nbsp;
-      <a [routerLink]="" (click)="onRegister()"> {{ 'SIGN_UP_BUTTON' | translate }} </a>
+      <a [routerLink]="[]" (click)="onRegister()"> {{ 'SIGN_UP_BUTTON' | translate }} </a>
     </mat-card-footer>
 
   </mat-card>
