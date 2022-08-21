@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormBuilder, FormGroup, Validators, ValidatorFn } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators, ValidatorFn } from '@angular/forms';
 
 // import { Observable } from 'rxjs';
 
@@ -32,7 +32,7 @@ export class DynamicFormService {
   private uriSuffix = '.json';
 
   constructor(@Inject(DynamicFormsConfigService) private config: DynamicFormsConfig,
-              private formBuilder: FormBuilder,
+              private formBuilder: UntypedFormBuilder,
               private httpClient: HttpClient,
               private logger: LoggerService) {
 
@@ -47,7 +47,7 @@ export class DynamicFormService {
 
   // https://angular.io/api/forms/FormControl
 
-  public createGroup(formModel: DynamicFormModel): FormGroup {
+  public createGroup(formModel: DynamicFormModel): UntypedFormGroup {
 
     const group = this.formBuilder.group({});
 
@@ -107,7 +107,7 @@ export class DynamicFormService {
 
   }
 
-  public initGroup(formGroup: FormGroup, item): void {
+  public initGroup(formGroup: UntypedFormGroup, item): void {
 
     this.logger.info('DynamicFormService: initGroup()');
 
@@ -125,7 +125,7 @@ export class DynamicFormService {
 
   }
 
-  public value(formGroup: FormGroup, item): void {
+  public value(formGroup: UntypedFormGroup, item): void {
 
     this.logger.info('DynamicFormService: value()');
 

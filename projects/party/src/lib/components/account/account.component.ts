@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { Observable, Subscription } from 'rxjs';
@@ -21,7 +21,7 @@ import { ACCOUNT_GENERAL_INFORMATION_GROUP } from '../../models/form-ids';
 export class AccountComponent extends ItemComponent<Account> {
 
   public generalInformationModel: DynamicFormModel; // DynamicFormControlModel[] = [];
-  public generalInformationGroup: FormGroup;
+  public generalInformationGroup: UntypedFormGroup;
 
   constructor(route: ActivatedRoute,
               private entityService: AccountsService,

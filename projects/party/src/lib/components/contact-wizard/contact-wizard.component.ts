@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -35,10 +35,10 @@ import { ContactsService } from '../../services/contacts/contacts.service';
 export class ContactWizardComponent implements OnInit, OnDestroy {
 
   public generalInformationModel: DynamicFormModel;
-  public generalInformationGroup: FormGroup;
+  public generalInformationGroup: UntypedFormGroup;
 
   public addressInformationModel: DynamicFormModel;
-  public addressInformationGroup: FormGroup;
+  public addressInformationGroup: UntypedFormGroup;
 
   public item: Contact;
 

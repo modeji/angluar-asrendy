@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 import { Observable, Subscription } from 'rxjs';
@@ -38,10 +38,10 @@ const ELECTORAL_DIVISION_TAB_INDEX = 3;
 export class ContactComponent extends ItemComponent<Contact> {
 
   public generalInformationModel: DynamicFormModel;
-  public generalInformationGroup: FormGroup;
+  public generalInformationGroup: UntypedFormGroup;
 
   public addressInformationModel: DynamicFormModel;
-  public addressInformationGroup: FormGroup;
+  public addressInformationGroup: UntypedFormGroup;
 
   private electoralDivision: ElectoralDivision;
 

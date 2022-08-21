@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, UntypedFormGroup } from '@angular/forms';
 
 import { Subscription } from 'rxjs';
 
@@ -44,7 +44,7 @@ export class TaskComponent implements OnInit, OnChanges, OnDestroy {
   public process: ProcessModel;
   public roles: IdentityLink[];
   public selectedTabIndex = 0;
-  public taskFormGroup: FormGroup;
+  public taskFormGroup: UntypedFormGroup;
   public taskModel: DynamicFormModel;
 
   private currentUser: any;

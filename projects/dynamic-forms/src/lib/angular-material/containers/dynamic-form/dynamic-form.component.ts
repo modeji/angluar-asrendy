@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 import { DynamicFormModel } from '../../models/dynamic-form.model';
 import { DynamicFormControlCustomEvent } from '../../models/dynamic-form-control.model';
@@ -26,7 +26,7 @@ import { LoggerService } from 'utils';
 })
 export class DynamicFormComponent implements OnInit {
 
-  @Input() formGroup: FormGroup;
+  @Input() formGroup: UntypedFormGroup;
 
   // tslint:disable-next-line:no-input-rename
   @Input('model') formModel: DynamicFormModel;
@@ -36,7 +36,7 @@ export class DynamicFormComponent implements OnInit {
 
   @Output() customEvent = new EventEmitter<any>();
 
-  constructor(private formBuilder: FormBuilder,
+  constructor(private formBuilder: UntypedFormBuilder,
               private logger: LoggerService) {
 
   }

@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { DynamicFormModel, DynamicFormService } from 'dynamic-forms';
@@ -19,7 +19,7 @@ import { LoggerService } from 'utils';
 })
 export class LoginComponent implements OnInit, OnDestroy {
 
-  public formGroup: FormGroup;
+  public formGroup: UntypedFormGroup;
   public formModel: DynamicFormModel;
 
   private returnUrl: string;

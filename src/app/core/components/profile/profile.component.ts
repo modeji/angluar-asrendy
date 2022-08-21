@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   public containerHeight: number;
 
   public generalInformationModel: DynamicFormModel;
-  public generalInformationGroup: FormGroup;
+  public generalInformationGroup: UntypedFormGroup;
 
   public item: any;
 

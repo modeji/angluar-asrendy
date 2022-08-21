@@ -1,5 +1,5 @@
 import { Component, HostBinding, Input, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 
 import { DynamicFormControlModel } from '../../models/dynamic-form-control.model';
 
@@ -14,7 +14,7 @@ import { LoggerService } from 'utils';
 })
 export class DynamicLabelComponent implements OnInit {
 
-  @Input() formGroup: FormGroup;
+  @Input() formGroup: UntypedFormGroup;
   @Input() model: DynamicFormControlModel;
 
   @HostBinding('class') elementClass;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { Observable } from 'rxjs';
@@ -22,7 +22,7 @@ export class EmailComponent implements OnInit {
   public item: Email;
 
   public emailModel: DynamicFormModel;
-  public emailGroup: FormGroup;
+  public emailGroup: UntypedFormGroup;
 
   constructor(private dialogService: DialogService,
               private dynamicFormService: DynamicFormService,
